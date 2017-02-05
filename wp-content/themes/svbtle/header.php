@@ -40,7 +40,7 @@
 	<body <?php body_class(); ?>>
 		<header id="sidebar">
 		  <aside id="customlogo">
-		    <img src="/stephyharrison-hello.png" />
+		    <img src="/wp-content/stephyharrison-hello.png" />
 		  </aside>
 <!--
 		  <aside id="logo" class="clearfix">
