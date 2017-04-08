@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'dietdidot';
+    src: url('dietdidot_bold_italic-webfont.woff2') format('woff2'),
+         url('dietdidot_bold_italic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'dietdidot';
+    src: url('dietdidot_bold-webfont.woff2') format('woff2'),
+         url('dietdidot_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dietdidot';
+    src: url('dietdidot_italic-webfont.woff2') format('woff2'),
+         url('dietdidot_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'dietdidot';
+    src: url('dietdidot-webfont.woff2') format('woff2'),
+         url('dietdidot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

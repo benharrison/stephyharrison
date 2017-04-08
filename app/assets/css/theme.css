@@ -4,7 +4,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url('https://fonts.googleapis.com/css?family=Oswald:400|Roboto:400,400i,700');
+/*https://fonts.googleapis.com/css?family=Open+Sans*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:400|Roboto:400,400i,700|Open+Sans');
+@import url('../fonts/dd/stylesheet.css');
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1168,7 +1170,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
   font-weight: 500;
   line-height: 1.1;
   color: #353535;

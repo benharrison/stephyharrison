@@ -310,59 +310,59 @@ $(function() {
     // Theme: Color schemes
     // ====================
 
-    var $body = $('body');
-    var sidebar = '';
-        sidebar += '<div class="sidebar">';
-        sidebar += '<div class="sidebar__toggle" role="button"><i class="ion-android-settings"></i></div>';
-        sidebar += '<h4 class="sidebar__heading page-header">Color scheme</h4>';
-        sidebar += '<ul class="sidebar__colors">';
-        sidebar += '<li data-color="orange" class="active brand-orange"><span></span></li>';
-        sidebar += '<li data-color="deep-orange" class="brand-deep-orange"><span></span></li>';
-        sidebar += '<li data-color="green" class="brand-green"><span></span></li>';
-        sidebar += '<li data-color="teal" class="brand-teal"><span></span></li>';
-        sidebar += '<li data-color="cyan" class="brand-cyan"><span></span></li>';
-        sidebar += '</ul>';
-        sidebar += '<h4 class="sidebar__heading page-header">Banner Parallax</h4>';
-        sidebar += '<button class="sidebar__parallax btn btn-block btn-default"><span class="show">Click to enable</span><span class="hidden">Click to disable</span></button>';
-        sidebar += '</div>';
+    // var $body = $('body');
+    // var sidebar = '';
+    //     sidebar += '<div class="sidebar">';
+    //     sidebar += '<div class="sidebar__toggle" role="button"><i class="ion-android-settings"></i></div>';
+    //     sidebar += '<h4 class="sidebar__heading page-header">Color scheme</h4>';
+    //     sidebar += '<ul class="sidebar__colors">';
+    //     sidebar += '<li data-color="orange" class="active brand-orange"><span></span></li>';
+    //     sidebar += '<li data-color="deep-orange" class="brand-deep-orange"><span></span></li>';
+    //     sidebar += '<li data-color="green" class="brand-green"><span></span></li>';
+    //     sidebar += '<li data-color="teal" class="brand-teal"><span></span></li>';
+    //     sidebar += '<li data-color="cyan" class="brand-cyan"><span></span></li>';
+    //     sidebar += '</ul>';
+    //     sidebar += '<h4 class="sidebar__heading page-header">Banner Parallax</h4>';
+    //     sidebar += '<button class="sidebar__parallax btn btn-block btn-default"><span class="show">Click to enable</span><span class="hidden">Click to disable</span></button>';
+    //     sidebar += '</div>';
 
-    if ( !$body.hasClass('no-settings') ) {
-        $body.append(sidebar);
-    }
+    // if ( !$body.hasClass('no-settings') ) {
+    //     $body.append(sidebar);
+    // }
 
-    // Toggle sidebar
-    $body.on('click', '.sidebar__toggle', function() {
-        $('.sidebar').toggleClass('active');
-    });
+    // // Toggle sidebar
+    // $body.on('click', '.sidebar__toggle', function() {
+    //     $('.sidebar').toggleClass('active');
+    // });
 
-    // Toggle color schemes
+    // // Toggle color schemes
 
-    $body.on('click', '.sidebar__colors > li', function() {
-        var $this = $(this);
+    // $body.on('click', '.sidebar__colors > li', function() {
+    //     var $this = $(this);
 
-        // Toggle stylesheet
-        var color = $this.data('color');
-        var linkLink = '<link rel="stylesheet" href="assets/css/theme_' + color + '.css">';
-        $('[href*="assets/css/theme"]').after(linkLink);
+    //     // Toggle stylesheet
+    //     var color = $this.data('color');
+    //     var linkLink = '<link rel="stylesheet" href="assets/css/theme_' + color + '.css">';
+    //     $('[href*="assets/css/theme"]').after(linkLink);
 
-        // Toggle active button
-        $this.addClass('active');
-        $this.siblings('li').removeClass('active');
-    });
+    //     // Toggle active button
+    //     $this.addClass('active');
+    //     $this.siblings('li').removeClass('active');
+    // });
 
-    // Enable parallax
-    $body.on('click', '.sidebar__parallax', function() {
-        var $this = $(this);
+    // // Enable parallax
+    // $body.on('click', '.sidebar__parallax', function() {
+    //     var $this = $(this);
 
-        // Toggle parallax
-        $body.animate({
-            scrollTop: 0
-        }, 500, function() {
-            bannerSection.toggleClass('parallax');
-        });
+    //     // Toggle parallax
+    //     $body.animate({
+    //         scrollTop: 0
+    //     }, 500, function() {
+    //         bannerSection.toggleClass('parallax');
+    //     });
 
-        // Toggle button caption
-        $this.find('span').toggleClass('show hidden');
-    });
+    //     // Toggle button caption
+    //     $this.find('span').toggleClass('show hidden');
+    // });
 
 });
