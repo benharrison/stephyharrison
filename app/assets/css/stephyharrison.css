@@ -1,0 +1,11 @@
+h1#logo {
+    background-image:url(../img/sh/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 247px;
+    margin: 0;
+}
+
+h1#logo strong {
+    display: none;
+}
